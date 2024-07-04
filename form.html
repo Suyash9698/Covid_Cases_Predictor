@@ -1,0 +1,177 @@
+<html>
+<head>
+
+<style>
+
+i{
+  cursor: pointer;
+}
+
+h1{
+font-family:Courier New;
+text-align:center;
+font-style: oblique;
+font-weight:5300px;
+text-decoration:underline;
+text-transform:uppercase;
+color:transparent;
+background-image:url('code.jpg');
+background clip:text;
+-webkit-background-clip:text;
+-webkit-animation:animated 6s linear infinite;
+font-size:80px;
+
+
+input[type=text]{
+
+font-size:15px;
+}
+::placeholder{
+color:grey;
+
+}
+</style>
+<script>
+var xe;
+function fun(){
+fun9();
+var x=document.getElementById('a');
+
+x.style.color="red";
+xe=1;
+document.getElementById('num2').value=xe+" star: WORST";
+}
+function fun2(){
+fun();
+fun6();
+var x=document.getElementById('a2');
+x.style.color="red";
+xe=2;
+document.getElementById('num2').value=xe+" star: BAD";
+}
+function fun3(){
+fun();
+fun2();
+fun7();
+xe=3;
+var x=document.getElementById('a3');
+x.style.color="red";
+document.getElementById('num2').value=xe+" star: AVERAGE";
+}
+function fun4(){
+fun();
+fun2();
+fun3();
+fun8();
+xe=4;
+document.getElementById('num2').value=xe+" star: GOOD";
+var x=document.getElementById('a4');
+x.style.color="red";
+}
+function fun5(){
+fun();
+fun2();
+fun3();
+fun4();
+xe=5;
+var x=document.getElementById('a5');
+x.style.color="red";
+document.getElementById('num2').value=xe+" star: BEST";
+}
+function fun6(){
+var x=document.getElementById('a3');
+x.style.color="black";
+var y=document.getElementById('a4');
+y.style.color="black";
+var z=document.getElementById('a5');
+z.style.color="black";
+}
+function fun7(){
+var x=document.getElementById('a5');
+x.style.color="black";
+var y=document.getElementById('a4');
+y.style.color="black";
+
+}
+function fun8(){
+var x=document.getElementById('a5');
+x.style.color="black";
+}
+function fun9(){
+var x=document.getElementById('a2');
+x.style.color="black";
+var y=document.getElementById('a3');
+y.style.color="black";
+var z=document.getElementById('a4');
+z.style.color="black";
+var s=document.getElementById('a5');
+s.style.color="black";
+}
+</script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+#a,#a2,#a3,#a4,#a5{
+font-size:50px;
+margin-left:80px;
+}
+#sub1,#sub2{
+height:40px;
+width:100px;
+text-transform:uppercase;
+
+letter-spacing:2px;
+margin-top:20px;
+background-color:lightgreen;
+}
+#sub2{
+background-color:black;
+color:black;
+}
+
+#sub1:hover{
+background-color:green;
+}
+#me2{
+margin-top:5px;
+height:100px;
+width:800px;
+color:black;
+font-size:15px;
+border:1px solid black;
+}
+#none{
+color:blue;
+font-size:20px;
+cursor:pointer;
+
+margin-left:41px;
+}
+</style>
+</head>
+    <body>
+<div id="new"><h1><strong>FEEDBACK</strong></h1></div>
+<h2 style="margin-left:1px;">Rate us now...</h2>
+
+<div align="center">
+  <i class="material-icons" onclick="fun();" id="a">&#9733;</i>
+  <i class="material-icons" onclick="fun2();" id="a2">&#9733;</i>
+  <i class="material-icons" onclick="fun3();" id="a3">&#9733;</i>
+  <i class="material-icons" onclick="fun4();" id="a4">&#9733;</i>
+  <i class="material-icons" onclick="fun5();" id="a5">&#9733;</i>
+</div>
+
+
+<br><br><br><br>
+        <form>
+            <input type="text" id="num2" style="margin-top:5px;height:30px;width:180px;border:1px solid black;" placeholder="Your rating will display here:" readonly>
+              <br> <br><br>
+            <input type="text" id="num1" style="margin-top:5px;height:30px;width:500px;border:1px solid black;" placeholder="Your name:">
+            <br><br><br>
+            <textarea id="me2" placeholder="Any suggestions(optional)..."></textarea>
+           <center><input type="submit" id="sub1">
+            <br></br>
+            <a id="none"/>Ratings and Reviews</a></form></body></center>
+    </form></div>
+    </body>
+</html>
